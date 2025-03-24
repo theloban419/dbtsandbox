@@ -1,6 +1,14 @@
-select
-    id as customer_id,
-    first_name,
-    last_name
-
-from {{ source('jaffle_shop', 'customers')}}
+WITH customers AS (
+  SELECT
+    ID AS CUSTOMER_ID,
+    FIRST_NAME,
+    LAST_NAME
+  FROM {{ source('jaffle_shop', 'customers') }}
+), stg_jaffle_shop__customers AS (
+  SELECT
+    *
+  FROM customers
+)
+SELECT
+  *
+FROM stg_jaffle_shop__customers
