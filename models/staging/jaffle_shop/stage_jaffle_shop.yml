@@ -22,3 +22,4 @@ models:
         data_tests:
           - accepted_values:
               values: ['completed', 'return_pending', 'shipped', 'returned', 'placed']
+
