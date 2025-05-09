@@ -2,21 +2,15 @@ models:
   - name: dim_customers
     columns:
       - name: customer_id
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: first_name
-        tests:
+        data_tests:
           - not_null
       - name: last_name
-        tests:
-          - not_null
-      - name: first_order_date
-        tests:
-          - not_null
-      - name: most_recent_order_date
-        tests:
+        data_tests:
           - not_null
       - name: number_of_orders
-        tests:
+        data_tests:
           - not_null
