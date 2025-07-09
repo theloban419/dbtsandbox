@@ -2,13 +2,13 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-<<<<<<< HEAD
+
 name: 'my_new_project'
-=======
+
 
 name: 'jaffle_shop'
 
->>>>>>> 8223ed33ad06f7b9b3dff720281c30d3396dad7b
+
 version: '1.0.0'
 config-version: 2
 
